@@ -76,7 +76,6 @@ input[name="email"] {
   border-radius: 50px;
   background-image: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   padding: .80em 1.55em;
-  margin-left: -3em;
   border: none;
 }
 
@@ -84,9 +83,6 @@ input[name="email"] {
 /* Media query for desktop */
 
 @media screen and (min-width: 60rem) {
-
-
-
   .main-content {
     display: grid;
     grid-template-columns: 65% 35%;
@@ -99,11 +95,6 @@ input[name="email"] {
 
   .content-header {
     grid-area: "header";
-  }
-
-  .main-text {
-    display: grid;
-    gap: 2em;
   }
 
   .main__title {
@@ -121,6 +112,10 @@ input[name="email"] {
 
   .main-text {
     grid-area: "text";
+    display: grid;
+    gap: 2em;
+    max-width: 45rem;
+    text-align: left;
   }
 }
 
