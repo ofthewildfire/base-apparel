@@ -9,4 +9,92 @@
 
 body {
   font-family: 'Josefin Sans Variable', sans-serif;
+  background-color: var(--DesaturatedRed);
+  /* Setup the grid here */
+
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+
+header, main, aside {
+  background-color: var(--SoftRed);
+  padding: 0em 2em;
+}
+
+form {
+  display: flex;
+}
+
+label, input, button {
+  height: 3rem;
+  border-radius: 50px;
+}
+
+button {
+  margin-left: -3rem;
+  padding: 0em 1.5em;
+}
+
+img {
+ width: 100%;
+}
+
+.text {
+    display: grid;
+    gap: 1.5em;
+}
+
+/* Tyopgraphy */
+
+.text__title {
+    color: var(--DarkGrayishRed);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+    /* space */
+
+
+}
+
+.accent {
+  color: var(--DesaturatedRed);
+  font-weight: 300;
+}
+
+.text__info {
+  color: var(--DesaturatedRed);
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 30rem;
+}
+
+
+@media screen and (min-width: 60rem) {
+  body {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 5rem 1fr;
+  }
+
+
+  header {
+    grid-row: 1 / span 1;
+    display: grid;
+    align-items: center;
+  }
+
+  main {
+    display: grid;
+    align-items: center;
+  }
+
+  aside {
+    grid-row: 1 / span 2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
 }
