@@ -30,9 +30,9 @@ body {
 
 img, picture {
   display: block;
-  width: 100%; /* Add this line to ensure the image fills its container */
-  height: 100%; /* Maintain aspect ratio */
-  object-fit: cover; /* This ensures the image covers the entire container */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
 }
 
 form {
@@ -83,10 +83,6 @@ button:is(:hover, :active) {
   left: .5em;
 }
 
-
-.form-error {
-  /* transform: translateX(-205%); */
-}
 
 .hidden {
   display: none;
