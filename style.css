@@ -52,6 +52,8 @@ label {
   border: .0625rem solid var(--DesaturatedRed);
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 20rem;
 }
 
 input {
@@ -84,7 +86,7 @@ button:is(:hover, :active) {
 
 
 .form-error {
-  transform: translateX(-285%);
+  /* transform: translateX(-205%); */
 }
 
 .hidden {
@@ -94,6 +96,8 @@ button:is(:hover, :active) {
 .text {
     display: grid;
     gap: 1.5em;
+    text-align: center;
+    padding: 2em;
 }
 
 /* Tyopgraphy */
@@ -103,10 +107,6 @@ button:is(:hover, :active) {
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 10px;
-
-    /* space */
-
-
 }
 
 .accent {
@@ -163,6 +163,10 @@ main {
     grid-row: 1 / span 2;
     width: 100%;
     max-width: 100%;
+  }
+  
+  .text {
+    text-align: left;
   }
 
   .text__title {
