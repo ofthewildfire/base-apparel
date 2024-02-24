@@ -22,17 +22,16 @@ body {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr;
-  gap: 10px;
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
-  width: 100%;
-  overflow-x: hidden;
+  background-color: var(--SoftRed);
+  
 }
 
 img, picture {
   display: block;
   width: 100%; /* Add this line to ensure the image fills its container */
-  height: auto; /* Maintain aspect ratio */
+  height: 100%; /* Maintain aspect ratio */
   object-fit: cover; /* This ensures the image covers the entire container */
 }
 
@@ -126,16 +125,19 @@ header {
   display: flex;
   align-items: center;
   padding: 2em;
+  background-color: white;
 }
 
 aside {
   order: 2;
   width: 100%;
+  background-color: white;
 }
 
 
 main {
   order: 3;
+  background-color: white;
 }
 
 
@@ -143,6 +145,7 @@ main {
   body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 5rem 1fr;
+    margin: 0;
   }
 
 
@@ -157,12 +160,15 @@ main {
     display: grid;
     align-items: center;
     padding: 2em;
+    margin: 0;
   }
 
   aside {
     grid-row: 1 / span 2;
     width: 100%;
     max-width: 100%;
+   min-height: 100vh;
+   margin: 0;
   }
   
   .text {
