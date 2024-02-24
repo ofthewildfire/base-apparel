@@ -1,5 +1,4 @@
 import '@fontsource-variable/josefin-sans';
-import "./modernreset.css";
 import './style.css';
 // Supports weights 100-700
 import javascriptLogo from './javascript.svg'
@@ -29,3 +28,4 @@ function validate(e){
         errorText.classList.remove("hidden")
     }
   }
+
